@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>CUPOST</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+</head>
+
+<body>
+
+    <div class="main-wrap">
+        <button onclick="scrollToTop()" id="myBtn-mob" title="Go to top">TOP</button>
+        <button id="myBtn-text" title="Go to reservation"></button>
+        <div class="header p-x-20">
+            <div class="cu-logo"><img src="../images/cupost-logo.png" alt="cupost로고"></div>
+            <button class="i-badge bell on"></button>
+            <button class="i-badge search"></button>
+        </div>
+        <div class="content-wrap p-x-20">
+            <div class="main-banner">
+                <div class="swiper main-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../images/cu-main-1.png" alt="배너광고"></div>
+                        <div class="swiper-slide"><img src="../images/cu-main-1.png" alt="배너광고"></div>
+                        <div class="swiper-slide"><img src="../images/cu-main-1.png" alt="배너광고"></div>
+                        <div class="swiper-slide"><img src="../images/cu-main-1.png" alt="배너광고"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="btn-reservation">
+                <a href="#">
+                    <img src="../images/cu-icon-res.svg" alt="">
+                    <p>예약하기</p>
+                </a>
+            </div>
+            <div class="past-list">
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+            <ul class="quick-wrap p-x-20">
+                <li><a href="#"><i class="i-history"></i>
+                        <p>이용내역</p>
+                    </a></li>
+                <li><a href="#"><i class="i-coupon"></i>
+                        <p>내 쿠폰<strong>4</strong></p>
+                    </a></li>
+                <li><a href="#"><i class="i-cashback"></i>
+                        <p>캐시백<strong>3</strong></p>
+                    </a></li>
+                <li><a href="#"><i class="i-benefit"></i>
+                        <p>혜택정보</p>
+                    </a></li>
+            </ul>
+            <div class="banner-wrap">
+                <a href="#">
+                    <h2>페이락 소개</h2>
+                    <p>페이락머니로 간편하게 송금</p>
+                </a>
+            </div>
+            <div class="affiliate-wrap">
+                <div class="head">
+                    <a href="#">
+                        <h2>제휴카드</h2>
+                        <span href="#" class="btn-all">전체보기</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="footer-wrap">
+                <ul class="footer-buttons">
+                    <li><a>회사소개</a></li>
+                    <li><a>이용약관</a></li>
+                    <li><a>개인정보처리방침</a></li>
+                    <li><a>사업제휴</a></li>
+                    <li><a>고객센터</a></li>
+                </ul>
+                <ul class="footer-sns">
+                    <li class="insta"><a></a></li>
+                    <li class="utube"><a></a></li>
+                    <li class="kakao"><a></a></li>
+                </ul>
+                <div class="inform-wrap">
+                    <strong>주)비지에프네트웍스</strong>
+                    <dl>
+                        <div>
+                            <dt>대표자명</dt>
+                            <dd>임현식</dd>
+                        </div>
+                        <div>
+                            <dt>주소</dt>
+                            <dd>서울특별시 광진구 광나루로56길,85 24층 1-13</dd>
+                        </div>
+                        <div>
+                            <dt>e-mail</dt>
+                            <dd>cupost@bgf.co.kr</dd>
+                            <dt>FAX</dt>
+                            <dd>02-6711-0699</dd>
+                        </div>
+                        <div>
+                            <dt>호스팅 서비스 제공자</dt>
+                            <dd>주)비지에프네트웍스</dd>
+                        </div>
+                        <div class="biz-num">
+                            <span>사업자등록번호 119-86-23709</span>
+                            <span class="biz-btn"><a href="">사업자 정보 확인</a></span>
+                        </div>
+                    </dl>
+                </div>
+                <div class="footer-copy">
+                    <div class="footer-logo"><img src="../images/cu-footer-logo.png" alt="cupost로고"></div>
+                    <div class="copyright">Copyright ©2016 CUpost ALL RIGHTS RESERVED.</div>
+                    <div class="footer-wa"><img src="../images/cu-footer-img.png" alt="미래창조과학부"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script>
+        // gototop
+        $(function () {
+            var mybutton = document.getElementById("myBtn-text");
+            var mybutton2 = document.getElementById("myBtn-mob");
+            window.onscroll = function () { scrollFunction() };
+            function scrollFunction() {
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    mybutton.style.display = "block";
+                    mybutton2.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                    mybutton2.style.display = "none";
+                }
+            }
+            function topFunctionMob() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        });
+        var swiper1 = new Swiper(".main-banner .main-swiper", {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                spaceBetween: 0,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>

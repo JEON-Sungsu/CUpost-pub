@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>CUPOST</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+</head>
+
+<body>
+
+    <div class="main-wrap">
+        <div class="content-wrap bg-white p-x-20">
+            <div class="content">
+                <section class="login">
+                    <div class="main-logo-wrap">
+                        <img src="../images/cu-main-logo.png" alt="cu post 메인 로고">
+                    </div>
+                    <div class="login-form">
+                        <!--유효성 false시 input-wrap에 error 클래스 추가-->
+                        <div class="input-wrap">
+                            <input type="text" class="checking-input" placeholder="ID" />
+                            <!--유효성 false시input-btn-left에 check-false로 클래스 변경-->
+                            <span class="input-btn-left check-true">유효성체크</span>
+                            <button type="button" class="input-btn-right ic-login">로그인</button>
+                            <span class="input-sub-text">4~16자의 영문, 숫자를 입력해주세요.</span>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="password" class="checking-input" placeholder="PW">
+                            <span class="input-btn-left check-true">유효성체크</span>
+                            <button type="button" class="input-btn-right ic-pass">로그인</button>
+                            <span class="input-sub-text">영문, 숫자 조합 최소 10자 이상을 사용하세요.</span>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="checkbox" id="keep-login">
+                            <label for="keep-login">로그인 유지</label>
+                        </div>
+                    </div>
+                    <div class="options-row">
+                        <ul class="login-list">
+                            <li class="login-item">
+                                <a href="javascript:void(0)">아이디 찾기</a>
+                            </li>
+                            <li class="login-item">
+                                <a href="javascript:void(0)">비밀번호 찾기</a>
+                            </li>
+                            <li class="login-item">
+                                <a href="javascript:void(0)">회원가입</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button-group button-columns">
+                        <button type="button" class="btn btn-primary">로그인</button>
+                        <button type="button" class="btn btn-outline">비회원으로 이용하기</button>
+                    </div>
+                    <div class="login-notice">
+                        <p>
+                            회원가입이나 로그인 없이 비회원 예약이 가능합니다.<br>
+                            단 국제특송 서비스는 회원만 이용 가능합니다.
+                        </p>
+
+                    </div>
+                </section>
+            </div>
+            <!--content-->
+        </div>
+        <!--content-wrap-->
+    </div>
+    <!--main-wrap -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

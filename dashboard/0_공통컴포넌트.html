@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>CUPOST</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+</head>
+
+<body>
+
+    <div class="main-wrap login">
+        <div class="content-wrap p-x-20">
+            <div>
+                <h6 style="margin-bottom:20px;">인풋박스</h6>
+                <div class="input-wrap">
+                    <label for=""></label>
+                    <input type="password" class="checking-input" />
+                    <button type="button" class="input-btn-right hide-pass">비밀번호 가리기</button>
+
+                </div>
+
+                <div class="input-wrap">
+                    <label for=""></label>
+                    <input type="password" class="checking-input" />
+                    <span class="input-btn-left check-true">유효성 확인</span>
+                    <button type="button" class="input-btn-right hide-pass">비밀번호 가리기</button>
+                    <span class="input-sub-text">현재 비밀번호를 입력해주세요.</span>
+                </div>
+
+
+                <!-- valid 안맞을시 error 클래스 추가 -->
+                <div class="input-wrap error">
+                    <label for=""></label>
+                    <input type="text" class="checking-input">
+                    <span class="input-btn-left check-false">유효성 확인</span>
+                    <button type="button" class="input-btn-right hide-pass">비밀번호 가리기</button>
+                    <span class="input-sub-text">현재 비밀번호를 입력해주세요.</span>
+                </div>
+
+                <!-- value가 있을 때(입력완료하고 블러되었을때) -->
+                <div class="input-wrap">
+                    <label for=""></label>
+                    <!-- input에 done 클래스 추가 -->
+                    <input type="text" class="checking-input done" value='블라블라'>
+                    <span class="input-btn-left check-false">유효성 확인</span>
+                    <button type="button" class="input-btn-right hide-pass">비밀번호 가리기</button>
+                    <span class="input-sub-text">현재 비밀번호를 입력해주세요.</span>
+                </div>
+            </div>
+        </div>
+        <!--content-wrap-->
+    </div>
+    <!--main-wrap -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+</body>
+
+</html>
