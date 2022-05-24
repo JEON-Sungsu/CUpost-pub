@@ -158,7 +158,7 @@ ul {
 }
 
 body {
-    font-family: -apple-system, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    font-family: -apple-system, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', 'NotoSans KR', sans-serif;
 }
 
 blockquote,
@@ -235,10 +235,6 @@ input[type="number"]::-webkit-inner-spin-button {
     --gray800: rgba(42, 42, 42, 1);
 }
 
-*,
-body {
-    font-family: 'NotoSans KR', 'Apple SD Gothic Neo', sans-serif;
-}
 
 .w100p {
     width: 100% !important;
