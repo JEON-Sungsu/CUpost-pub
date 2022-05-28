@@ -1,0 +1,97 @@
+<!--
+/********************************************************************
+* @업무명   : 바텀시트 호출
+* @설명 :  
+*********************************************************************
+* 번호    작업자     작업일         JIRA        변경내용
+*--------------------------------------------------------------------
+  1     전성수     2022.05.28(토)
+*********************************************************************/
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>CUPOST</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+</head>
+
+<!-- 개발자 공유: 
+    1. 바텀시트 dim 클릭, 닫기버튼 클릭시 사라지는 공통로직 필요
+-->
+
+<body>
+
+    <div class="main-wrap bg-white">
+
+        <header id="header" class="header-basic">
+            <div class="header-left">
+                <button type="button" class="header-prev">이전화면</button>
+            </div>
+            <div class="header-center">
+                <h1 class="main-title">기본 바텀시트</h1>
+            </div>
+            <div class="header-right"></div>
+        </header>
+
+        <div class="content-wrap bg-white p-x-20">
+            <div class="content">
+                <button type="button" class="call-basic-bt">기본 바텀시트 호출</button>
+            </div>
+            <!--content-->
+
+            <!-- sticky-btn -->
+            <div class="sticky-button-wrap bg-white">
+                <div class="button-row">
+                    <button type="button" class="btn btn-primary">다음</button>
+                </div>
+            </div>
+        </div>
+        <!--content-wrap-->
+        <div class="bottomsheet" id="basic-bottomsheet">
+            <div class="bottomsheet-container">
+                <button type="button" class="btn-close">닫기</button>
+                <div class="bottom-header">
+                    <h3 class="bottom-sheet-title">바텀시트 타이틀 자리</h3>
+                </div>
+                <div class="bottom-cont">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nesciunt corrupti excepturi at quaerat sit quibusdam error dolorem, dicta illo repellat dolorum aperiam fuga voluptatem repellendus adipisci. Magnam, incidunt quas.
+                    </p>
+                </div>
+                <div class="button-row">
+                    <button type="button" class="btn-soft">취소</button>
+                    <button type="button" class="btn-primary">확인</button>
+                </div>
+            </div>
+            <div class="dim"></div>
+        </div>
+
+
+    </div>
+    <!--main-wrap -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.call-basic-bt').on('click', function () {
+                $('#basic-bottomsheet').addClass('show')
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,3 +1,15 @@
+<!--
+/********************************************************************
+* @업무명   : 비밀번호 찾기 메인
+* @설명 : 
+*********************************************************************
+* 번호    작업자     작업일         JIRA        변경내용
+*--------------------------------------------------------------------
+  1     전성수     2022.05.28(토)
+*********************************************************************/
+-->
+
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -16,8 +28,10 @@
 <body>
 
     <div class="main-wrap bg-white">
-        <header class="sticky-header">
-            <button type="button" class="btn-prev">이전화면</button>
+        <header id="header" class="header-basic">
+            <div class="header-left">
+                <button type="button" class="header-prev">이전화면</button>
+            </div>
         </header>
         <div class="content-wrap bg-white p-x-20">
             <div class="content">
@@ -30,20 +44,22 @@
                         </p>
                     </div>
                     <div class="find-form-wrap">
+                        <!-- 유효성 인증 실패시 error클래스 추가  -->
                         <div class="input-wrap">
+                            <!-- ID 본인인증 완료시 버튼 input에 done 클래스 추가-->
                             <input type="text" class="input-authentication" />
                             <button type="button" class="input-btn-right authentication">본인인증여부 체크</button>
                             <!-- 아이디 입력시 버튼 writing 클래스 추가-->
                             <!-- <button type="button" class="input-btn-right authentication writing">본인인증여부 체크</button> -->
-                            <!-- ID 본인인증 완료시 버튼 valide 클래스 추가-->
+                            <!-- ID 본인인증 완료시 버튼 valid 클래스 추가-->
                             <!-- <button type="button" class="input-btn-right authentication valid">본인인증여부 체크</button> -->
-                            <span class="input-sub-text">아이디 입력 후 본인인증 여부를 체크해주세요..</span>
+                            <span class="input-sub-text">아이디 입력 후 본인인증 여부를 체크해주세요.</span>
                         </div>
                     </div>
                     <!-- ID 본인인증 되었을 시 authentication-progressing에 checked 클래스 추가 버튼 disabled 제거 -->
                     <div class="authentication-progressing">
                         <button type="button" class="authentication-button" disabled>
-                            <img src="../images/img-self-authentication.png" alt="본인인증하기">
+                            <!-- <img src="../images/img-self-authentication.png" alt="본인인증하기"> -->
                         </button>
                         <p class="authentication-notice">
                             이미지 클릭 시,<br>
@@ -52,10 +68,31 @@
                     </div>
 
                 </section>
+
             </div>
             <!--content-->
+
+            <!-- 키패드 등장시 나오는 버튼  -->
+            <!-- <div class="sticky-button-wrap bg-white keypad-sticky">
+                <div class="button-row">
+                    <button type="button" class="btn btn-primary">확인</button>
+                </div>
+            </div> -->
+
         </div>
         <!--content-wrap-->
+
+        <!-- 본인인증 실패시 팝업  -->
+        <div class="pop-message">
+            <div class="message-box">
+                <p class="pop-content ct-only">해당 아이디는 본인인증되지 않은 ID입니다.<br>
+                    본인인증부터 진행해주세요.</p>
+                <div class="button-row">
+                    <button type="button" class="btn-primary">확인</button>
+                </div>
+            </div>
+        </div>
+
 
     </div>
     <!--main-wrap -->

@@ -138,6 +138,14 @@
             border-radius: 0.3rem;
         }
 
+        .issue {
+            background-color: #f0a400;
+            display: inline-block;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 0.3rem;
+        }
+
         .new {
             background-color: red;
         }
@@ -216,6 +224,8 @@
                 <dd class="new"></dd>
                 <dt>완료</dt>
                 <dd class="finished"></dd>
+                <dt>이슈</dt>
+                <dd class="issue"></dd>
             </dl>
         </div>
         <h1>CU POST 웹퍼블리싱 작업 목록</h1>
@@ -249,15 +259,16 @@
                     <td class="alignc">공통</td>
                     <td class="alignc"></td>
                     <td>
-                        <a href="javascript:void(0);" onclick="window.open('./dashboard/0_공통컴포넌트.html', '','width=392, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">공통컴포넌트</a><br />
-                        <a href="javascript:void(0);" onclick="window.open('./dashboard/0_공통팝업.html', '','width=392, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">공통 팝업</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/0_공통팝업.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">0_공통팝업</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/0_바텀시트.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">0_바텀시트</a><br />
                     </td>
                     <td class="alignc">
-                        <span class="ing"></span><br>
-                        <span class="ing"></span><br>
+                        <span class="finished"></span><br>
+                        <span class="finished"></span><br>
                     </td>
                     <td class="alignc"></td>
-                    <td class="alignc"></td>
+                    <td class="alignc">
+                    </td>
                     <td>
                         <ul class="history">
                             <li></li>
@@ -269,14 +280,16 @@
                     <td class="alignc">로그인</td>
                     <td class="alignc"></td>
                     <td>
-                        <a href="javascript:void(0);" onclick="window.open('./dashboard/1_로그인.html', '','width=392, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">1_로그인</a><br />
-                        <a href="javascript:void(0);" onclick="window.open('./dashboard/1_로그인_비밀번호재설정.html', '','width=392, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">1_로그인_비밀번호 재설정</a><br />
-                        <a href="javascript:void(0);" onclick="window.open('./dashboard/1_로그인_통합회원전환안내팝업.html', '','width=392, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">1_로그인_통합회원 전환 안내 팝업</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/1_로그인.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">1_로그인</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/1_로그인_비밀번호재설정.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">1_로그인_비밀번호 재설정</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/1_로그인_통합회원전환안내팝업.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">1_로그인_통합회원 전환 안내 팝업</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/1_로그인_회원등급안내팝업.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">1_로그인_회원등급 안내 팝업</a><br />
                     </td>
                     <td class="alignc">
                         <span class="finished"></span><br>
                         <span class="finished"></span><br>
-                        <span class="ing"></span><br>
+                        <span class="finished"></span><br>
+                        <span class="finished"></span><br>
                     </td>
                     <td class="alignc"></td>
                     <td class="alignc">
@@ -293,17 +306,28 @@
                     <td class="alignc">비밀번호 찾기</td>
                     <td class="alignc"></td>
                     <td>
-                        <a href="javascript:void(0);" onclick="window.open('./dashboard/2_비밀번호찾기.html', '','width=392, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">2_비밀번호 찾기_ID인증 전</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/2_비밀번호찾기.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">2_비밀번호 찾기_ID인증 전</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/2_비밀번호찾기_없는아이디.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">2_비밀번호 찾기_없는아이디</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/2_비밀번호찾기_인증되지않은ID.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">2_비밀번호 찾기_인증되지않은 ID</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/2_비밀번호찾기_ID인증완료.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">2_비밀번호 찾기_ID 인증 완료</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/2_비밀번호찾기_비밀번호재설정.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">2_비밀번호 찾기_비밀번호재설정</a><br />
                     </td>
                     <td class="alignc">
+                        <span class="finished"></span><br>
+                        <span class="finished"></span><br>
+                        <span class="issue"></span><br>
+                        <span class="finished"></span><br>
                         <span class="finished"></span><br>
                     </td>
                     <td class="alignc"></td>
                     <td class="alignc">
+                        - 비밀번호 찾기 > 인증되지않은 ID 약관 동의중 두번째 SMS와 이메일 시안상 맞는건지
                     </td>
                     <td>
                         <ul class="history">
-                            <li></li>
+                            <li>
+                                비밀번호 찾기 > ID 인증 전 인증실패 팝업창 추가(0528) <br>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -312,7 +336,7 @@
                     <td class="alignc">메인</td>
                     <td class="alignc"></td>
                     <td>
-                        <a href="javascript:void(0);" onclick="window.open('./dashboard/home.html', '','width=392, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">메인</a><br />
+                        <a href="javascript:void(0);" onclick="window.open('./dashboard/home.html', '','width=420, height=812, toolbar=no, menubar=no, location=no, status=no, resizable=no');">메인</a><br />
                     </td>
                     <td class="alignc">
                         <span class="finished"></span><br>

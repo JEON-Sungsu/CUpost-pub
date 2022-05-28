@@ -1,3 +1,15 @@
+<!--
+/********************************************************************
+* @업무명   : 공통팝업
+* @설명 : 
+*********************************************************************
+* 번호    작업자     작업일         JIRA        변경내용
+*--------------------------------------------------------------------
+  1     전성수     2022.05.28(토)
+*********************************************************************/
+-->
+
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -16,13 +28,61 @@
 <body>
 
     <div class="main-wrap bg-white">
-        <header class="sticky-header">
-            <button type="button" class="btn-prev">이전화면</button>
+        <header id="header" class="header-basic">
+            <div class="header-left">
+                <button type="button" class="header-prev">이전화면</button>
+            </div>
+            <div class="header-center">
+                <h1 class="main-title">공통 팝업</h1>
+            </div>
+            <div class="header-right"></div>
         </header>
         <div class="content-wrap bg-white p-x-20">
             <div class="content">
+                <button type="button" class="btn-soft normal-pop">노멀 팝업</button>
+                <!-- pop-message에 show 클래스 탈부착 -->
+                <div class="pop-message">
+                    <div class="message-box">
+                        <p class="pop-title">팝업타이틀자리</p>
+                        <p class="pop-content">텍스트 컨텐츠 자리입니다. 가운데 정렬입니다.ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn-primary">확인</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-primary normal-pop-2">노멀 팝업 - 버튼2 좌측정렬</button>
+                <!-- pop-message에 show 클래스 탈부착 -->
+                <div class="pop-message">
+                    <div class="message-box">
+                        <p class="pop-title">팝업타이틀자리</p>
+                        <p class="pop-content text-left">텍스트 컨텐츠 자리입니다. 좌측정렬입니다. ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                        <div class="button-row">
+                            <button type="button" class="btn-soft">취소</button>
+                            <button type="button" class="btn-primary">확인</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-soft normal-pop-3"> 본문만 있는 팝업 </button>
+                <!-- pop-message에 show 클래스 탈부착 -->
+                <div class="pop-message">
+                    <div class="message-box">
+                        <p class="pop-content ct-only">텍스트 컨텐츠 자리입니다</p>
+                        <div class="button-row">
+                            <button type="button" class="btn-soft">취소</button>
+                            <button type="button" class="btn-primary">확인</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--content-->
+
+            <div class="sticky-button-wrap bg-white">
+                <div class="button-row">
+                    <button type="button" class="btn btn-primary">다음</button>
+                </div>
+            </div>
         </div>
         <!--content-wrap-->
 
@@ -35,7 +95,19 @@
     <script src="../js/script.js"></script>
 
     <script>
+        $(document).ready(function () {
+            $('.normal-pop').on('click', function () {
+                $(this).next().addClass('show');
+            })
 
+            $('.normal-pop-2').on('click', function () {
+                $(this).next().addClass('show');
+            })
+
+            $('.normal-pop-3').on('click', function () {
+                $(this).next().addClass('show');
+            })
+        })
     </script>
 </body>
 
