@@ -6697,6 +6697,123 @@ input[type=checkbox].check-btn-type:checked~label::before {
 }
 
 
+/* 회원가입 > 메인  */
+
+.member-signup {
+    margin-top: 16px;
+}
+
+.member-signup .distinguish-member .input-wrap {
+    margin-bottom: 8px;
+}
+
+.member-signup .distinguish-member .input-wrap input[type=radio] {
+    display: none;
+}
+
+.member-signup .distinguish-member .input-wrap .sign-up-input:checked~label {
+    border-color: var(--primary-color);
+}
+
+.member-signup .distinguish-member .input-wrap .sign-up-input:checked~label h5 {
+    color: var(--primary-color);
+}
+
+.member-signup .distinguish-member .input-wrap .member-type {
+    display: flex;
+    padding: 20px 13px;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.member-signup .distinguish-member .input-wrap .member-type .member-check-img {
+    width: 61px;
+    height: 61px;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.member-signup .distinguish-member .input-wrap .member-type .member-check-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.member-signup .distinguish-member .input-wrap .member-type .member-check-misc {
+    padding-right: 37px;
+}
+
+
+.member-signup .distinguish-member .input-wrap .member-type .member-check-misc h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.6px;
+    color: #000000;
+    margin-bottom: 6px;
+    transition: all .2s ease-in-out;
+}
+
+.member-signup .distinguish-member .input-wrap .member-type .member-check-misc p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.6px;
+    color: #949494;
+}
+
+
+.member-signup .member-info {
+    display: none;
+    margin-top: 61px;
+    background: #F9F9F9;
+    border-radius: 12px;
+    padding: 20px 13px;
+}
+
+.member-signup .member-info.show {
+    display: block;
+}
+
+.member-signup .member-info .info-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.3px;
+    color: #37D243;
+    padding: 6px 12px 6px 8px;
+    margin-bottom: 10px;
+}
+
+.member-signup .member-info .info-title::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/ic-info-green-14.png) no-repeat center;
+    background-size: 100%;
+    vertical-align: bottom;
+    margin-right: 4px;
+
+}
+
+.member-signup .member-info .member-info-list {
+    margin-bottom: 10px;
+}
+
+.member-signup .member-info .member-info-item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: -0.6px;
+    color: #949494;
+}
+
+.member-signup .member-info .input-wrap label {}
+
 
 
 
