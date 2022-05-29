@@ -6366,7 +6366,8 @@ footer
     padding-right: 143px;
 }
 
-.find-form-wrap .input-wrap .input-btn-right.authentication {
+.find-form-wrap .input-wrap .input-btn-right.authentication,
+.certification-form .input-wrap .input-btn-right.authentication {
     text-indent: 0;
     width: auto;
     height: 29px;
@@ -6379,19 +6380,20 @@ footer
     font-weight: 600;
     font-size: 14px;
     line-height: 120%;
-
     color: #B4B4B4;
     opacity: 1;
 }
 
-.find-form-wrap .input-wrap .input-btn-right.authentication.writing {
+.find-form-wrap .input-wrap .input-btn-right.authentication.writing,
+.certification-form .input-wrap .input-btn-right.authentication.writing {
     font-weight: 400;
     color: #282828;
     background: #FFFFFF;
     border: 1px solid #F1F1F1;
 }
 
-.find-form-wrap .input-wrap .input-btn-right.authentication.valid {
+.find-form-wrap .input-wrap .input-btn-right.authentication.valid,
+.certification-form .input-wrap .input-btn-right.authentication.valid {
     color: #37D243;
     background: #FFFFFF;
     border: 1px solid #37D243;
@@ -6563,6 +6565,141 @@ input[type=checkbox].check-btn-type:checked~label::before {
     text-decoration-line: underline;
     color: #949494;
 }
+
+/* 아이디 찾기  */
+
+.id-find {
+    margin-top: 20px;
+}
+
+.id-find .id-find-top {
+    margin-bottom: 30px;
+}
+
+.id-find .id-find-top .find-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 18px;
+
+}
+
+.id-find .id-find-top .find-paragh {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.6px;
+    color: #10192D;
+}
+
+.id-find .id-find-top .find-paragh span {
+    color: var(--primary-color);
+}
+
+.id-find .find-form-wrap {
+    margin-bottom: 0;
+}
+
+.id-find .certification-form {
+    display: none;
+}
+
+.id-find .certification-form .input-wrap {
+    margin-bottom: 4px;
+}
+
+.id-find .certification-form .input-wrap input[type=number]:focus~.valid-time-notice {
+    display: flex;
+}
+
+.id-find .certification-form .input-wrap .valid-time-notice {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.id-find .certification-form .input-wrap .valid-time-notice .input-sub-text {
+    display: inline-block;
+}
+
+.id-find .certification-form .input-wrap .valid-time-notice .valid-time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FF005C;
+    margin: 4px 4px 0 0;
+}
+
+.id-find .certification-form .button-row {
+    justify-content: flex-end;
+}
+
+.id-find .certification-form .button-row button {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.3px;
+    color: #37D243;
+}
+
+.id-find .certification-form .button-row button::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/ic-arrow-right-20.png) no-repeat;
+    background-size: 100%;
+    background-position: -4px -4px;
+}
+
+/* 아이디 있음, 없음 팝업 */
+
+.id-confirm {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.id-confirm .id-confirm-img {
+    margin: 0 auto;
+    width: 128px;
+    height: 128px;
+    margin-bottom: 40px;
+}
+
+.id-confirm .id-confirm-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.id-confirm .id-confirm-show {
+    min-width: 335px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.6px;
+    color: #282828;
+}
+
+.id-confirm .id-confirm-show b {
+    font-weight: 500;
+}
+
+.id-confirm .id-confirm-show .confirmed-id {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+
+
+
+
 
 
 /* 메인 */

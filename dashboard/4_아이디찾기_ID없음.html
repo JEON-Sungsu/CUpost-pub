@@ -1,11 +1,11 @@
 <!--
 /********************************************************************
-* @업무명   : 로그인 > 회원등급안내 팝업
-* @설명 : 
+* @업무명   : 아이디 찾기 > 아이디 없음
+* @설명 :  아이디 찾기 인증 후, 아이디 없을 시 나오는 팝업
 *********************************************************************
-* 번호    작업자     작업일             변경내용
+* 번호    작업자     작업일            변경내용
 *--------------------------------------------------------------------
-  1     전성수     2022.05.28(토)
+  1     전성수     2022.05.29(일)
 *********************************************************************/
 -->
 
@@ -26,31 +26,42 @@
 </head>
 
 <body>
+
     <div class="main-wrap bg-white">
         <header id="header" class="header-basic">
             <div class="header-left">
-                <button type="button" class="header-prev">이전화면</button>
+                <button type="button" class="header-prev" onclick="history.back()">이전화면</button>
             </div>
             <div class="header-center">
-                <h1 class="main-title">회원 등급 안내</h1>
+                <h1 class="main-title">메인 타이틀</h1>
             </div>
             <div class="header-right"></div>
         </header>
-        <div class="content-wrap bg-white p-x-20 pt-20">
-            <div class="content">
-                <section class="member-level">
-                    <div class="member-pop-wrap">
-                        <img src="../images/test-img.png" alt="테스트이미지입니다.">
-                    </div>
-                </section>
-            </div>
+        <div class="content-wrap bg-white p-x-20">
             <!--content-->
+            <div class="content">
+                <div class="content">
+                    <section class="id-confirm">
+                        <div class="id-confirm-img">
+                            <img src="../images/img-not-member.png" alt="아이디가 존재하지 않습니다." aria-hidden>
+                        </div>
+                        <p class="id-confirm-show">
+                            등록되지 않은 사용자입니다.<br>
+                            <span class="confirmed-id">회원가입</span> 후 이용해주세요.
+                        </p>
+                    </section>
+                </div>
 
+            </div>
+
+            <!-- sticky-button -->
             <div class="sticky-button-wrap bg-white">
                 <div class="button-row">
-                    <button type="button" class="btn btn-primary">다음</button>
+                    <button type="button" class="btn btn-soft">회원가입</button>
+                    <button type="button" class="btn btn-primary">아이디 찾기</button>
                 </div>
             </div>
+            <!--content-->
         </div>
         <!--content-wrap-->
 
