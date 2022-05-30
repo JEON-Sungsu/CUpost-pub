@@ -1,0 +1,188 @@
+<!--
+/********************************************************************
+* @업무명   : 회원가입 > 약관 동의
+* @설명 :  
+*********************************************************************
+* 번호    작업자     작업일             변경내용
+*--------------------------------------------------------------------
+  1     전성수     2022.05.30(월)
+*********************************************************************/
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>CUPOST</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+</head>
+
+<body>
+
+    <!-- 개발자 공유 내용 :
+        1. 전체선택 클릭시 아래항목 전체 체크,리스트 오픈 스크립트 필요.
+        2. 필수값,전체 체크시 버튼 disabled 삭제
+    -->
+    <div class="main-wrap bg-white">
+        <header id="header" class="header-basic signin-member">
+            <div class="header-left">
+                <button type="button" class="header-prev" onclick="history.back()">이전화면</button>
+            </div>
+            <div class="header-center">
+                <h1 class="main-title">국내택배예약</h1>
+            </div>
+            <div class="header-right">
+                <span class="step-indicator-01"></span>
+            </div>
+        </header>
+        <div class="content-wrap bg-white p-x-20">
+            <!--content-->
+            <div class="content">
+                <section class="id-certification">
+                    <form>
+                        <div class="input-wrap btn-type">
+                            <input type="checkbox" class="check-btn-type" id="check-all">
+                            <label for="check-all">전체 선택</label>
+                        </div>
+                        <div class="terms-list-wrap">
+                            <div class="terms-arccodian-row">
+                                <div class="terms-depth-1">
+                                    <p class="terms-title">BGF네트웍스 (CUpost / CUpon) 회원약관</p>
+                                    <button type="button" class="open-depth-2"></button>
+                                </div>
+                                <ul class="terms-depth-2">
+                                    <li class="terms-item">
+                                        <a href="javascript:void(0)" class="terms-item-content">
+                                            <div class="input-wrap">
+                                                <input type="checkbox" class="terms-check" id="account-terms-01">
+                                                <label for="account-terms-01">[필수] CUpost 이용약관 동의</label>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="terms-item">
+                                        <a href="javascript:void(0)" class="terms-item-content">
+                                            <div class="input-wrap">
+                                                <input type="checkbox" class="terms-check" id="account-terms-02">
+                                                <label for="account-terms-02">[필수] CUpost 이용약관 동의</label>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="terms-item">
+                                        <a href="javascript:void(0)" class="terms-item-content">
+                                            <div class="input-wrap">
+                                                <input type="checkbox" class="terms-check" id="account-terms-03">
+                                                <label for="account-terms-03">[필수] 개인정보 처리방침</label>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="terms-item">
+                                        <a href="javascript:void(0)" class="terms-item-content">
+                                            <div class="input-wrap">
+                                                <input type="checkbox" class="terms-check" id="account-terms-04">
+                                                <label for="account-terms-04">[필수] 개인정보 제3자 제공 동의</label>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="terms-item">
+                                        <a href="javascript:void(0)" class="terms-item-content">
+                                            <div class="input-wrap">
+                                                <input type="checkbox" class="terms-check" id="account-terms-05">
+                                                <label for="account-terms-05">[선택] 개인정보 수집•이용 동의</label>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="terms-item">
+                                        <a href="javascript:void(0)" class="terms-item-content">
+                                            <div class="input-wrap">
+                                                <input type="checkbox" class="terms-check" id="account-terms-06">
+                                                <label for="account-terms-06">[선택] CUpost 마케팅 정보 수신 동의</label>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="terms-item">
+                                        <a href="javascript:void(0)" class="terms-item-content">
+                                            <div class="input-wrap">
+                                                <input type="checkbox" class="terms-check" id="account-terms-07">
+                                                <label for="account-terms-07">[선택] CUpost 마케팅 정보 수신 동의</label>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="terms-arccodian-row">
+                                <div class="terms-depth-1">
+                                    <p class="terms-title">BGF리테일 (CU멤버십) 회원 약관</p>
+                                    <button type="button" class="open-depth-2"></button>
+                                </div>
+                                <ul class="terms-depth-2">
+                                    <li class="terms-item">
+                                        <a href="javascript:void(0)" class="terms-item-content">
+                                            <div class="input-wrap">
+                                                <input type="checkbox" class="terms-check" id="account-terms-08">
+                                                <label for="account-terms-08">[필수] CUpost 이용약관 동의</label>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="terms-item">
+                                        <a href="javascript:void(0)" class="terms-item-content">
+                                            <div class="input-wrap">
+                                                <input type="checkbox" class="terms-check" id="account-terms-09">
+                                                <label for="account-terms-09">[선택] 개인정보 수집•이용 동의</label>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="terms-item lettering">
+                                        <div class="input-wrap">
+                                            <input type="checkbox" class="terms-check" id="account-terms-10">
+                                            <label for="account-terms-10">SMS</label>
+                                        </div>
+                                        <div class="input-wrap">
+                                            <input type="checkbox" class="terms-check" id="account-terms-11">
+                                            <label for="account-terms-11">이메일</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <!-- sticky-button -->
+            <div class="sticky-button-wrap bg-white">
+                <div class="button-row">
+                    <button type="button" class="btn btn-primary" disabled>확인</button>
+                </div>
+            </div>
+            <!--content-->
+        </div>
+        <!--content-wrap-->
+
+    </div>
+    <!--main-wrap -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.terms-depth-2').hide()
+            $('.open-depth-2').on('click', function (e) {
+                $(e.target).closest('.terms-arccodian-row').toggleClass('open');
+                $(e.target).parent().next().slideToggle(300)
+            })
+        })
+    </script>
+</body>
+
+</html>

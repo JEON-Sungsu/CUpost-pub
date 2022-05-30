@@ -1,0 +1,189 @@
+<!--
+/********************************************************************
+* @업무명   : 회원가입 > 바텀시트
+* @설명 :  
+*********************************************************************
+* 번호    작업자     작업일            변경내용
+*--------------------------------------------------------------------
+  1     전성수     2022.05.30(월)
+*********************************************************************/
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 개발자 공유 내용:
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>CUPOST</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+</head>
+
+<body>
+
+    <div class="main-wrap bg-white">
+        <header id="header" class="header-basic">
+            <div class="header-left">
+                <button type="button" class="header-prev" onclick="history.back()">이전화면</button>
+            </div>
+            <div class="header-center">
+                <h1 class="main-title">회원가입</h1>
+            </div>
+            <div class="header-right"></div>
+        </header>
+        <div class="content-wrap bg-white p-x-20">
+            <!--content-->
+            <div class="content">
+                <section class="member-signup">
+                    <div class="distinguish-member">
+                        <div class="input-wrap">
+                            <input type="radio" id="personal" name="member-signup" class="sign-up-input" />
+                            <label for="personal" class="member-type">
+                                <div class="member-check-img">
+                                    <img src="../images/img-personal-pack.png" alt="일반회원 이미지" aria-hidden>
+                                </div>
+                                <div class="member-check-misc">
+                                    <h5>일반 회원가입</h5>
+                                    <p>*개인사업자 고객은 사업자 회원가입을 이용해주시길 바랍니다.</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="radio" id="enterprise" name="member-signup" class="sign-up-input" />
+                            <label for="enterprise" class="member-type">
+                                <div class="member-check-img">
+                                    <img src="../images/img-enterpirise.png" alt="기업회원 이미지" aria-hidden>
+                                </div>
+                                <div class="member-check-misc">
+                                    <h5>사업자 회원가입</h5>
+                                    <p>사업자 인증으로 보다 저렴하고 편리하게 편의점 택배를 이용할 수 있도록 사업자 회원제도를 운영하고 있습니다.</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 위의 가입유형 체크시 등장 show 클래스 추가 -->
+                    <div class="member-info">
+                        <p class="info-title">안내사항</p>
+                        <ul class="member-info-list">
+                            <li class="member-info-item">
+                                •사업자번호 및 사업자 명의 확인 진행 후 운임할인이 자동 적용됩니다.
+                            </li>
+                            <li class="member-info-item">
+                                •회원 전환 후 일정기간 실적 미발생 시, 일반회원으로 전환됩니다.
+                            </li>
+                            <li class="member-info-item">
+                                •타 사업자번호 도용 발생 시, 회원등급이 강제로 전환될 수 있습니다.
+                            </li>
+                            <li class="member-info-item">
+                                •사업자 운임 및 정책은 예고없이 변경될 수 있습니다.
+                            </li>
+                        </ul>
+                        <div class="input-wrap">
+                            <input type="checkbox" id="notice-check">
+                            <label for="notice-check">안내사항을 모두 확인하였습니다.</label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- sticky-button -->
+            <div class="sticky-button-wrap bg-white">
+                <div class="button-row">
+                    <button type="button" class="btn btn-primary call-bottomsheet" disabled>다음</button>
+                </div>
+            </div>
+            <!--content-->
+        </div>
+        <!--content-wrap-->
+        <div class="bottomsheet show" id="member-bottom">
+            <div class="bottomsheet-container">
+                <button type="button" class="btn-close">닫기</button>
+                <div class="bottom-header">
+                    <h3 class="bottom-sheet-title">BGF네트웍스 통합회원 서비스</h3>
+                </div>
+                <div class="bottom-cont">
+                    <div class="list-wrap">
+                        <p class="bottom-notice">
+                            (주)BGF네트웍스 관련 사이트를 중복 가입 없이
+                            하나의 아이디로 이용 가능합니다.
+                        </p>
+                        <div class="bottom-notice-list">
+                            <div class="notice-img-wrap">
+                                <img src="../images/cu-cupon-img.png" alt="씨유 쿠폰 로고" aria-hidden>
+                            </div>
+                            <div class="list-right">
+                                <p class="list-title">
+                                    통합회원
+                                </p>
+                                <span class="list-explain">
+                                    동일 아이디로 회원 로그인 가능
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-wrap">
+                        <div class="bottom-notice-list">
+                            <div class="notice-img-wrap">
+                                <img src="../images/cu-cu-img.png" alt="씨유 로고" aria-hidden>
+                            </div>
+                            <div class="list-right">
+                                <p class="list-title">
+                                    CU멤버십포인트
+                                </p>
+                                <span class="list-explain">
+                                    CUpost 서비스 이용 시<br>
+                                    CU멤버십(BGF리테일) 등급에 <br>
+                                    따라 1~2% CU포인트 적립 가능
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="caution">
+                        ※ 단, CU포인트 적립을 위해선 결제 간 포인트 적립 수단
+                        (휴대폰 번호, 포켓 CU등) 제시 필수
+                    </p>
+                </div>
+                <div class="button-row">
+                    <button type="button" class="btn-primary">확인</button>
+                </div>
+            </div>
+            <div class="dim"></div>
+        </div>
+
+    </div>
+    <!--main-wrap -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+        $(function () {
+            $(document).change(function () {
+                $('.member-info').addClass('show');
+                $('.call-bottomsheet').attr('disabled', false)
+            })
+
+            $('.btn-close').on('click', function () {
+                console.log($(this).parent());
+                $(this).parents('.bottomsheet').removeClass('show')
+            })
+
+            $('.dim').on('click', function () {
+                $(this).parent().removeClass('show')
+            })
+        })
+    </script>
+</body>
+
+</html>
