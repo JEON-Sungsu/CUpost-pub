@@ -28,6 +28,7 @@
 
     <!-- 개발자 공유 내용 :
         1. 전체선택 클릭시 아래항목 전체 체크,리스트 오픈 스크립트 필요.
+        2. 필수값,전체 체크시 버튼 disabled 삭제
     -->
     <div class="main-wrap bg-white">
         <header id="header" class="header-basic">
@@ -136,6 +137,16 @@
                                             </div>
                                         </a>
                                     </li>
+                                    <li class="terms-item lettering">
+                                        <div class="input-wrap">
+                                            <input type="checkbox" class="terms-check" id="account-terms-10">
+                                            <label for="account-terms-10">SMS</label>
+                                        </div>
+                                        <div class="input-wrap">
+                                            <input type="checkbox" class="terms-check" id="account-terms-11">
+                                            <label for="account-terms-11">이메일</label>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -146,7 +157,7 @@
             <!-- sticky-button -->
             <div class="sticky-button-wrap bg-white">
                 <div class="button-row">
-                    <button type="button" class="btn btn-primary">확인</button>
+                    <button type="button" class="btn btn-primary disabled">확인</button>
                 </div>
             </div>
             <!--content-->
