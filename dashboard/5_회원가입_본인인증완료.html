@@ -1,11 +1,11 @@
 <!--
 /********************************************************************
-* @업무명   : 페이지 기본 레이아웃
-* @설명 :  
+* @업무명   : 5. 회원가입 > 본인인증 완료
+* @설명 :  본인인증 완료 후 나오는 페이지
 *********************************************************************
 * 번호    작업자     작업일            변경내용
 *--------------------------------------------------------------------
-  1     전성수     2022.05.28(토)
+  1     전성수     2022.06.01 (수)
 *********************************************************************/
 -->
 
@@ -29,18 +29,39 @@
 <body>
 
     <div class="main-wrap bg-white">
-        <header id="header" class="header-basic">
+        <header id="header" class="header-basic signin-member">
             <div class="header-left">
                 <button type="button" class="header-prev" onclick="history.back()">이전화면</button>
             </div>
             <div class="header-center">
-                <h1 class="main-title">메인 타이틀</h1>
+                <h1 class="main-title">국내택배예약</h1>
             </div>
-            <div class="header-right"></div>
+            <div class="header-right">
+                <span class="step-indicator-00"></span>
+            </div>
         </header>
         <div class="content-wrap bg-white p-x-20">
             <!--content-->
             <div class="content">
+                <section class="user-check">
+                    <div class="input-wrap">
+                        <label for="user-name" class="input-title">이름</label>
+                        <input type="text" class="done" id="user-name" value="홍길동">
+                    </div>
+
+                    <div class="input-wrap">
+                        <label for="user-birth" class="input-title">생년월일</label>
+                        <input type="text" class="done" id="user-birth" value="19990101">
+                    </div>
+
+                    <div class="input-wrap">
+                        <label for="user-gender" class="input-title">성별</label>
+                        <select name="" id="user-gender" class="done">
+                            <option value="">남</option>
+                            <option value="">여</option>
+                        </select>
+                    </div>
+                </section>
 
             </div>
 

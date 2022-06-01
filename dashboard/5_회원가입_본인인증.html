@@ -1,18 +1,19 @@
 <!--
 /********************************************************************
-* @업무명   : 페이지 기본 레이아웃
+* @업무명   : 회원가입 > 본인인증
 * @설명 :  
 *********************************************************************
 * 번호    작업자     작업일            변경내용
 *--------------------------------------------------------------------
-  1     전성수     2022.05.28(토)
+  1     전성수     2022.05.31(월)
 *********************************************************************/
 -->
 
 
 <!DOCTYPE html>
 <html lang="ko">
-<!-- 개발자 공유 내용:  -->
+<!-- 개발자 공유 내용:
+-->
 
 <head>
     <meta charset="utf-8">
@@ -29,26 +30,40 @@
 <body>
 
     <div class="main-wrap bg-white">
-        <header id="header" class="header-basic">
+        <header id="header" class="header-basic signin-member">
             <div class="header-left">
                 <button type="button" class="header-prev" onclick="history.back()">이전화면</button>
             </div>
             <div class="header-center">
-                <h1 class="main-title">메인 타이틀</h1>
+                <h1 class="main-title">국내택배예약</h1>
             </div>
-            <div class="header-right"></div>
+            <div class="header-right">
+                <span class="step-indicator-02"></span>
+            </div>
         </header>
         <div class="content-wrap bg-white p-x-20">
             <!--content-->
             <div class="content">
+                <section class="signup-authentication">
+                    <div class="signup-authen-top">
+                        <h3 class="signup-authen-title">
+                            개인정보 확인을 위해<br>
+                            휴대폰 본인 인증이 필요합니다.
+                        </h3>
+                        <p class="signup-authen-paragh">
+                            아래 이미지 클릭 시, 통신사 본인인증 창이 생성됩니다.
+                        </p>
+                    </div>
 
-            </div>
-
-            <!-- sticky-button -->
-            <div class="sticky-button-wrap bg-white">
-                <div class="button-row">
-                    <button type="button" class="btn btn-primary">다음</button>
-                </div>
+                    <div class="signup-authen-bottom">
+                        <button type="button" class="authentication-button"></button>
+                        <p class="authentication-notice">
+                            <strong>본인 명의 휴대폰 번호</strong>로만 가입이 가능합니다.<br>
+                            타인 명의 도용으로 부정인증을 시행한 경우<br>
+                            관련법령에 따라 처벌 받을 수 있습니다.
+                        </p>
+                    </div>
+                </section>
             </div>
             <!--content-->
         </div>
@@ -63,7 +78,6 @@
     <script src="../js/script.js"></script>
 
     <script>
-
     </script>
 </body>
 

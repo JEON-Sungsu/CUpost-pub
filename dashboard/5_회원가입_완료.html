@@ -1,11 +1,11 @@
 <!--
 /********************************************************************
-* @업무명   : 페이지 기본 레이아웃
+* @업무명   : 5. 회원가입 > 가입완료
 * @설명 :  
 *********************************************************************
 * 번호    작업자     작업일            변경내용
 *--------------------------------------------------------------------
-  1     전성수     2022.05.28(토)
+  1     전성수     2022.06.01(수)
 *********************************************************************/
 -->
 
@@ -31,23 +31,39 @@
     <div class="main-wrap bg-white">
         <header id="header" class="header-basic">
             <div class="header-left">
-                <button type="button" class="header-prev" onclick="history.back()">이전화면</button>
             </div>
             <div class="header-center">
-                <h1 class="main-title">메인 타이틀</h1>
+                <h1 class="main-title">가입완료</h1>
             </div>
             <div class="header-right"></div>
         </header>
         <div class="content-wrap bg-white p-x-20">
             <!--content-->
             <div class="content">
+                <section class="signup-finish">
+                    <div class="finish-phrase-wrap">
+                        <div class="finish-img-wrap">
+                            <img src="../images/cu-img-signup.png" alt="가입을 완료하였습니다.">
+                        </div>
+                        <p class="finish-paragh">회원가입이 완료되었습니다.</p>
+                        <p class="welcome-finish">
+                            CUpost 신규회원가입을 축하드리며,<br>
+                            <span class="accent-txt">웰컴 할인쿠폰</span>이 발급되었습니다.
+                        </p>
 
+                        <!-- 3개월 이내 재가입자일시  -->
+                        <!-- <p class="welcome-finish">
+                            신규회원 가입<br>
+                            프로모션 대상이 아닙니다.
+                        </p> -->
+                    </div>
+                </section>
             </div>
 
             <!-- sticky-button -->
             <div class="sticky-button-wrap bg-white">
                 <div class="button-row">
-                    <button type="button" class="btn btn-primary">다음</button>
+                    <button type="button" class="btn btn-primary">로그인</button>
                 </div>
             </div>
             <!--content-->

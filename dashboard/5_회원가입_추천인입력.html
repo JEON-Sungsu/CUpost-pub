@@ -1,0 +1,168 @@
+<!--
+/********************************************************************
+* @업무명   : 5. 회원가입 > 본인인증완료 > 추천인 입력
+* @설명 :  
+*********************************************************************
+* 번호    작업자     작업일            변경내용
+*--------------------------------------------------------------------
+  1     전성수     2022.06.01 (수)
+*********************************************************************/
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 개발자 공유 내용:  -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>CUPOST</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+</head>
+
+<body>
+
+    <div class="main-wrap bg-white">
+        <header id="header" class="header-basic signin-member">
+            <div class="header-left">
+                <button type="button" class="header-prev" onclick="history.back()">이전화면</button>
+            </div>
+            <div class="header-center">
+                <h1 class="main-title">국내택배예약</h1>
+            </div>
+            <div class="header-right">
+                <span class="step-indicator-03"></span>
+            </div>
+        </header>
+        <div class="content-wrap bg-white p-x-20">
+            <!--content-->
+            <div class="content">
+                <section class="member-signup-info">
+                    <div class="recommand-wrap">
+                        <div class="input-wrap">
+                            <label for="recommand-input" class="input-title">추천인 아이디 (선택)</label>
+                            <input type="text" id="recommand-input" placeholder="" value="" />
+                        </div>
+                    </div>
+
+                    <div class="adress-wrap">
+                        <div class="input-wrap">
+                            <label for="adress-input" class="input-title">주소</label>
+                            <input type="text" id="adress-input" class="done" placeholder="기본주소" value="성수이로 10길" />
+                            <button type="button" id="open-search" class="input-btn-right ic-search">검색</button>
+                        </div>
+
+                        <!-- 기본주소 입력시 상세주소 인풋 생성 기본 display:none -->
+                        <div class="input-wrap specific-adress show">
+                            <input type="text" class="done" placeholder="상세주소" value="302호" />
+                        </div>
+                    </div>
+
+
+                    <div class="email-wrap">
+                        <div class="input-wrap">
+                            <label for="email-input" class="input-title">이메일 주소</label>
+                            <input type="text" id="email-input" class="checking-input done" placeholder="" value="anagma@sjsofttech.co.kr" />
+                            <span class="input-btn-left check-true">유효성체크</span>
+                            <span class="input-sub-text">이메일 형식에 맞게 입력해주세요.</span>
+                        </div>
+                    </div>
+
+                    <div class="password-wrap">
+                        <div class="input-wrap">
+                            <label for="pass-input" class="input-title">비밀번호</label>
+                            <input type="password" id="pass-input" class="checking-input done" placeholder="비밀번호" value="********" />
+                            <span class="input-btn-left check-true">유효성체크</span>
+                            <span class="input-sub-text">영문,숫자 조합 최소 10자 이상을 사용하세요.</span>
+                        </div>
+                        <div class="input-wrap pass-check">
+                            <input type="password" id="pass-check" class="checking-input done" placeholder="비밀번호 확인" value="********" />
+                            <span class="input-btn-left check-true">유효성체크</span>
+                            <!-- 비밀번호 확인서브 텍스트는 비밀번호가 일치할때만 등장, 기본 display:none 상태 -->
+                            <span class="input-sub-text">비밀번호가 일치합니다.</span>
+                            <!-- <span class="input-sub-text">비밀번호가 일치 하지 않습니다.</span> -->
+                        </div>
+                    </div>
+
+                    <div class="id-wrap">
+                        <div class="input-wrap">
+                            <label for="id-input" class="input-title">아이디</label>
+                            <input type="text" id="id-input" class="checking-input done" placeholder="ID를 입력하세요" value="홍길동" />
+                            <span class="input-btn-left check-true">유효성체크</span>
+                            <span class="input-sub-text">4~16자의 영문, 숫자를 입력해주세요.</span>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+            <!-- sticky-button -->
+            <div class="sticky-button-wrap bg-white">
+                <div class="button-row">
+                    <button type="button" class="btn btn-primary">다음</button>
+                </div>
+            </div>
+            <!--content-->
+        </div>
+        <!--content-wrap-->
+        <div class="bottomsheet" id="adress-search">
+            <div class="bottomsheet-container">
+                <button type="button" class="btn-close">닫기</button>
+                <div class="bottom-header">
+                    <h3 class="bottom-sheet-title">주소검색</h3>
+                </div>
+                <div class="bottom-cont">
+                    <div class="input-wrap">
+                        <input type="text" id="search-input" placeholder="검색어" value="" />
+                        <button type="button" class="input-btn-right ic-search">검색</button>
+                    </div>
+                    <div class="search-content">
+                        <p>
+                            정확한 검색을 위해 ‘도로명 + 건물번호', ‘건물명' 또는 ‘지번'을 입력하신 후 검색을 누르세요.
+                        </p>
+                        <p>
+                            도로명 : 광나루로 56길 85<br>
+                            건물명(아파트명) : 테크노마트. 역삼 푸르지오<br>
+                            지번 : 구의동 546-4
+                        </p>
+                    </div>
+                </div>
+                <div class="button-row">
+                    <button type="button" class="btn-primary">확인</button>
+                </div>
+            </div>
+            <div class="dim"></div>
+        </div>
+
+    </div>
+    <!--main-wrap -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+        $(function () {
+            $('.btn-close').on('click', function () {
+                $(this).parents('.bottomsheet').removeClass('show')
+            })
+
+            $('.dim').on('click', function () {
+                $(this).parent().removeClass('show')
+            })
+
+            $('#open-search').click(function () {
+                $('.bottomsheet').addClass('show');
+            })
+        })
+    </script>
+</body>
+
+</html>

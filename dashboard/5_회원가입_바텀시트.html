@@ -175,12 +175,15 @@
             })
 
             $('.btn-close').on('click', function () {
-                console.log($(this).parent());
                 $(this).parents('.bottomsheet').removeClass('show')
             })
 
             $('.dim').on('click', function () {
                 $(this).parent().removeClass('show')
+            })
+
+            $('.call-bottomsheet').click(function () {
+                $('.bottomsheet').addClass('show');
             })
         })
     </script>

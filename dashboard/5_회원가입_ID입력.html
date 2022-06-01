@@ -1,11 +1,11 @@
 <!--
 /********************************************************************
-* @업무명   : 페이지 기본 레이아웃
+* @업무명   : 5. 회원가입 > 본인인증완료 > ID입력
 * @설명 :  
 *********************************************************************
 * 번호    작업자     작업일            변경내용
 *--------------------------------------------------------------------
-  1     전성수     2022.05.28(토)
+  1     전성수     2022.06.01 (수)
 *********************************************************************/
 -->
 
@@ -29,19 +29,31 @@
 <body>
 
     <div class="main-wrap bg-white">
-        <header id="header" class="header-basic">
+        <header id="header" class="header-basic signin-member">
             <div class="header-left">
                 <button type="button" class="header-prev" onclick="history.back()">이전화면</button>
             </div>
             <div class="header-center">
-                <h1 class="main-title">메인 타이틀</h1>
+                <h1 class="main-title">국내택배예약</h1>
             </div>
-            <div class="header-right"></div>
+            <div class="header-right">
+                <span class="step-indicator-03"></span>
+            </div>
         </header>
         <div class="content-wrap bg-white p-x-20">
             <!--content-->
             <div class="content">
+                <section class="member-signup-info">
+                    <!--유효성 false시 input-wrap에 error 클래스 추가-->
+                    <div class="input-wrap">
+                        <label for="id-input" class="input-title">아이디를 입력해주세요</label>
+                        <input type="text" id="id-input" class="checking-input" placeholder="ID를 입력하세요" />
+                        <!--유효성 false시input-btn-left에 check-false로 클래스 변경-->
+                        <span class="input-btn-left check-true">유효성체크</span>
+                        <span class="input-sub-text">4~16자의 영문, 숫자를 사용하세요.</span>
+                    </div>
 
+                </section>
             </div>
 
             <!-- sticky-button -->
